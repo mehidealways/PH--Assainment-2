@@ -1,0 +1,33 @@
+
+* {
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-text-color: rgba(255, 255, 255, 1);
+  --section-bg-color: rgba(53, 17, 101, 0.4);
+  --heading-f-size: 48px;
+  --heading-f-weight: 700;
+  --sub-title-f-size: 24px;
+  --sub-title-f-weight: 700;
+  --pragraph-font-size: 16px;
+}
+
+body {
+  background-color: rgba(26, 11, 46, 1);
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* Common Class */
+.container{
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+/* main Style */
