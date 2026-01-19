@@ -28,6 +28,7 @@ body {
 .flex {
   display: flex;
 }
+
 .btn {
   padding: 12px 20px;
   font-size: 16px;
@@ -49,10 +50,34 @@ body {
   color: #00ff88;
   margin-left: 10px;
 }
-.btn .s-img {
-  position: relative;
-  top: 3px;
-  margin-right: 5px;
+
+/* why Choose TechWeb */
+
+.item-1 {
+  grid-row: 1 / span 2;
+  display: grid;
+  align-items: center;
+}
+
+.item-2 {
+  grid-column: 2 / span 3;
+  display: grid;
+  align-items: center;
+}
+.item-2 .item-3,
+img,
+h3 {
+  margin-bottom: 10px;
+}
+.item-3 {
+  grid-column: 2 / span 3;
+  display: grid;
+  align-items: center;
+}
+.item-4 {
+  grid-column: 1 / span 3;
+  display: grid;
+  align-items: center;
 }
 
 /* main Style */
@@ -68,7 +93,7 @@ body {
   display: block;
   width: 100%;
 }
-#navMenu img{
+#navMenu img {
   display: none;
 }
 
@@ -141,7 +166,6 @@ a {
 #podcast {
   padding: 50px 200px;
   background-color: rgba(26, 11, 46, 1);
-  margin-bottom: 100px;
 }
 .podcast_content {
   text-align: center;
@@ -179,29 +203,30 @@ a {
   margin-top: 40px;
 }
 
+/* Why Choose TechWave */
 
+#Choose {
+  padding: 120px 0;
+  background-color: rgba(35, 14, 61, 1);
+}
 
+.choose-title h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: var(--heading-f-size);
+  font-weight: var(--heading-f-weight);
+}
+.choose-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.choose-layout > div {
+  border-radius: 20px;
+  padding: 40px 30px;
+}
 
 @media screen and (max-width: 576px) {
   #navMenu img {
@@ -257,9 +282,11 @@ a {
     display: flex;
     max-width: 350px;
     margin: 0 auto;
+    gap: 10px;
   }
   .btn-2 {
     display: flex;
+   
     margin-left: 5px;
   }
   .s-img,
@@ -282,17 +309,26 @@ a {
   }
   .cunter-numbr {
     width: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   .score {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     justify-content: center;
   }
+  #Choose {
+    padding: 40px 0px;
+  }
 
+  .choose-title > h2 {
+    font-size: 28px;
+  }
 
+  .choose-layout {
+    display: flex;
+    flex-direction: column;
+  }
 }

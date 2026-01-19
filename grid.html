@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+
+
+body {
+  background: #120020;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.features {
+  padding: 80px 0;
+}
+
+.features-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Card style */
+.card {
+  background: linear-gradient(145deg, #2b0a4f, #1a062f);
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  margin: 16px 0 10px;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #cfc2e9;
+  line-height: 1.6;
+}
+
+/* Icon style */
+.icon {
+  font-size: 32px;
+}
+
+/* Different card sizes */
+.tall {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+
+  .wide,
+  .tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+
+
+
+</style>
+
+  
+</head>
+<body>
+  <section class="features">
+    <div class="features-container">
+  
+      <div class="card tall">
+        <div class="icon">🎧</div>
+        <h3>Premium Audio Quality</h3>
+        <p>
+          Experience crystal-clear sound with professional-grade recording
+          equipment and expert audio engineering.
+        </p>
+      </div>
+  
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Mobile Friendly</h3>
+        <p>
+          Listen on the go with seamless mobile experience and offline downloads.
+        </p>
+      </div>
+  
+      <div class="card">
+        <div class="icon">🌍</div>
+        <h3>Global Community</h3>
+        <p>
+          Connect with tech enthusiasts from over 120 countries worldwide.
+        </p>
+      </div>
+  
+      <div class="card wide">
+        <div class="icon">⚡</div>
+        <h3>Exclusive Interviews</h3>
+        <p>
+          Get unprecedented access to industry leaders and tech visionaries.
+        </p>
+      </div>
+  
+      <div class="card">
+        <div class="icon">📘</div>
+        <h3>Rich Resources</h3>
+        <p>
+          Access show notes, transcripts, and additional learning materials.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+
+</body>
+</html>
