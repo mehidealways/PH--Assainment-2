@@ -152,3 +152,109 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  #navMenu img {
+    display: inline;
+  }
+  #navMenu ul {
+    display: none;
+  }
+  #navMenu button {
+    display: none;
+  }
+
+  #navMenu .logo {
+    width: 30%;
+  }
+  /* Hero section */
+  .hero {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .hero-circle {
+    width: 260px;
+    height: 260px;
+    left: 0;
+    margin: 0 auto 30px auto;
+    background-size: contain;
+  }
+  .mic-icon {
+    right: 0;
+    width: 35%;
+  }
+  .new-card {
+    right: 20px;
+    top: 5px;
+  }
+  .h-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  .p-title {
+    font-size: 16px;
+    padding: 0 10px;
+    margin-bottom: 24px;
+  }
+  .hero-btn {
+    display: flex;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .btn-2 {
+    display: flex;
+    margin-left: 5px;
+  }
+  .s-img,
+  .btn img {
+    width: 15px;
+    margin-right: 5px;
+  }
+  /* Podcast section related style */
+
+  #podcast {
+    padding: 40px 10px;
+  }
+  .podcast_content {
+    width: 100%;
+  }
+
+  .podcast_content h2 {
+    font-size: 40px;
+    font-weight: var(--heading-f-weight);
+  }
+
+  .score {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+

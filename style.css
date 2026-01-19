@@ -64,14 +64,14 @@ body {
   align-items: center;
   padding: 24px 0;
 }
-#navMenu img {
-  display: none;
-}
-
-.logo img {
+#navMenu .logo {
   display: block;
   width: 100%;
 }
+#navMenu img{
+  display: none;
+}
+
 ul {
   display: flex;
   gap: 32px;
@@ -137,6 +137,72 @@ a {
   font-weight: 400;
 }
 
+/* About The Podcast Section related style */
+#podcast {
+  padding: 50px 200px;
+  background-color: rgba(26, 11, 46, 1);
+  margin-bottom: 100px;
+}
+.podcast_content {
+  text-align: center;
+}
+.podcast_content h2 {
+  margin-bottom: 16px;
+  font-size: var(--heading-f-size);
+  font-weight: var(--heading-f-weight);
+}
+.podcast_content p {
+  padding-bottom: 80px;
+  line-height: 25px;
+  border-bottom: 1px solid #dddddd30;
+  font-size: var(--pragraph-font-size);
+}
+/* Score related style */
+.score {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cunter-numbr {
+  text-align: center;
+}
+.cunter-numbr h2 {
+  margin-bottom: 16px;
+  font-size: var(--heading-f-size);
+  font-weight: var(--heading-f-weight);
+  color: #00ff88;
+}
+.cunter-numbr p {
+  font-size: var(--pragraph-font-size);
+}
+.score {
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
   #navMenu img {
     display: inline;
@@ -144,11 +210,12 @@ a {
   #navMenu ul {
     display: none;
   }
-  #navMenu button{
+  #navMenu button {
     display: none;
   }
+
   #navMenu .logo {
-    width: 30%;
+    width: 60%;
   }
   /* Hero section */
   .hero {
@@ -163,9 +230,9 @@ a {
     padding: 0;
   }
   .hero-circle {
-    width: 260px; 
+    width: 260px;
     height: 260px;
-    left: 0; 
+    left: 0;
     margin: 0 auto 30px auto;
     background-size: contain;
   }
@@ -178,15 +245,15 @@ a {
     top: 5px;
   }
   .h-title {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     margin-bottom: 15px;
   }
   .p-title {
     font-size: 16px;
-    padding: 0 10px; 
+    padding: 0 10px;
     margin-bottom: 24px;
   }
-  .hero-btn{
+  .hero-btn {
     display: flex;
     max-width: 350px;
     margin: 0 auto;
@@ -200,20 +267,32 @@ a {
     width: 15px;
     margin-right: 5px;
   }
+  /* Podcast section related style */
 
+  #podcast {
+    padding: 40px 10px;
+  }
+  .podcast_content {
+    width: 100%;
+  }
 
-  
+  .podcast_content h2 {
+    font-size: 40px;
+    font-weight: var(--heading-f-weight);
+  }
+  .cunter-numbr {
+    width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
-  
+  .score {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-content: center;
+  }
 
 
-    
-
-    
-
-
-   
-
-
-   
-
+}
