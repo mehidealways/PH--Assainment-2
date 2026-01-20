@@ -147,6 +147,9 @@ a {
 }
 
 /* hero image */
+.hero{
+  padding: 40px 0;
+}
 .hero-container {
   max-width: 550px;
   padding: 20px;
@@ -244,9 +247,12 @@ a {
 
 #Choose {
   padding: 120px 0;
+ 
   background-color: rgba(35, 14, 61, 1);
 }
-
+.choose-container{
+ width: 100%;
+}
 .choose-title h2 {
   text-align: center;
   font-size: var(--heading-f-size);
